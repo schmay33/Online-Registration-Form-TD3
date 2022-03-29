@@ -158,6 +158,9 @@ input.required::placeholder {
     flex-direction: column;
     flex-wrap: nowrap;
 }
+#zip_span {
+    width: 100%;
+}
 #zip {
     width: 50%;
 }
@@ -185,7 +188,7 @@ input.required::placeholder {
         flex: 4;
     }
     #zip {
-        flex: .35;
+        width: 25%;
     }
     button[type="submit"] {
         width: 100% !important;
