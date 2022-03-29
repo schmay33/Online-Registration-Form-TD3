@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>The Code Review</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1 class="uppercase" id="title">The Code Review</h1>
+		</header>
+		<main>
+			<div class="text-center break" id="tagline_section">
+				<h2>Signup for our newsletter</h2>
+				<p id="tagline">
+					Get the latest news on how your code is doing right in your
+					inbox
+				</p>
+			</div>
+            <hr class="thicker"/>
+			<hr/>
+			<form action="#">
+				<fieldset>
+					<legend>Contact Information</legend>
+					<div class="container">
+						<label class="item1" for="name">Full Name</label>
+						<span class="item2">
+							<input class="required" type="text" name="name" id="name" required placeholder="required"/>
+						</span>
+					</div>
+					<div class="container">
+						<label class="item1" for="email">Email Address</label>
+						<span class="item2">
+							<input class="required" placeholder="required" type="email" name="email" id="email" required />
+						</span>
+					</div>
+					<div class="container">
+						<label class="item1" for="phone">Phone Number</label>
+						<span class="item2">
+							<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" id="phone" />
+						</span>
+					</div>
+					<div class="container">
+						<label class="item1" for="street">Street Address</label>
+						<span class="item2">
+							<input type="text" name="street" id="street" />
+						</span>
+					</div>
+					<div class="container">
+						<label class="item1" for="city">City</label>
+						<span class="item2">
+							<input type="text" name="city" id="city" />
+						</span>
+					</div>
+					<div class="container">
+						<label class="item1" for="state">State</label>
+						<span class="item2">
+							<select name="state" id="state" placeholder="Choose State">
+								<option value="" disabled selected>Choose State</option>
+								<option value="AK">AK</option>
+								<option value="KS">KS</option>
+								<option value="MO">MO</option>
+							</select>
+						</span>
+					</div>
+					<div class="container">
+						<label class="item1" id="zip_label" for="zip">Zip Code</label>
+						<span class="item2">
+							<input type="text" name="zip" id="zip" pattern="^[0-9]{1,5}$" />
+						</span>
+					</div>
+				</fieldset>
+                <hr>
+				<fieldset>
+					<legend>Newsletter</legend>
+					<p style="clear: both;">Select the newsletters you would like to receive:</p>
+					<div><input
+						type="checkbox"
+						name="newsletter"
+						id="html"
+						value="html"
+					/>
+					<label for="html">HTML News</label></div>
+					<div><input
+						type="checkbox"
+						name="newsletter"
+						id="css"
+						value="css"
+					/>
+					<label for="css">CSS News</label></div>
+					<div><input
+						type="checkbox"
+						name="newsletter"
+						id="javascript"
+						value="javascript"
+					/>
+					<label for="javascript">Javascript News</label></div>
+					<p>Newsletter format</p>
+					<div><input
+						type="radio"
+						name="newsletterformat"
+						id="formatHTML"
+						value="html"
+					/>
+					<label for="formatHTML">HTML</label></div>
+					<div><input
+						type="radio"
+						name="newsletterformat"
+						id="formatPlain"
+						value="plain"
+					/>
+					<label for="formatPlain">Plain text</label></div>
+					<p>Other topics you'd like to hear about</p>
+					<textarea name="other" id="other"></textarea>
+					<div style="text-align: center;">
+						<button type="submit">Sign Up</button>
+					</div>
+				</fieldset>
+			</form>
+		</main>
+		<footer>
+			<p class="copyright">Copyright The Code Review</p>
+		</footer>
+	</body>
+</html>
