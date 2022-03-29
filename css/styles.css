@@ -70,7 +70,7 @@ legend {
     margin: 0;
     padding: 10px 0 10px 0;
 }
-legend:first-of-type {
+#first_legend {
     background: rgba(173, 231, 253, 0.103);
 }
 label {
