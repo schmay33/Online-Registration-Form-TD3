@@ -14,7 +14,6 @@ main {
     padding-left: 1em;
     padding-right: 1em;
     margin: auto;
-    background: rgba(245, 245, 245, 0.281);
 }
 footer {
     text-align: center;
@@ -57,18 +56,22 @@ p {
 fieldset {
     border: none;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 fieldset:first-of-type {
-    padding-bottom: 2rem;
+    padding-bottom: .5rem;
+    background: rgba(173, 231, 253, 0.103);
 }
 legend {
+    display: block;
+    width: 100%;
     font-size: 1.25rem;
     font-weight: 700;
-    margin-left: 0;
-    padding-left:0;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+legend:first-of-type {
+    background: rgba(173, 231, 253, 0.103);
 }
 label {
     font-weight: 100;
@@ -119,6 +122,14 @@ button[type="submit"] {
 span input,
 span select {
     width: 100%;
+}
+label {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+span {
+    padding-top: 5px;
+    padding-right: 15px;
 }
 
 input:focus-within,
